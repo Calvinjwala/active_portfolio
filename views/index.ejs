@@ -1,0 +1,65 @@
+<% include partials/header %>
+
+<div class="container-fluid ">
+  <div class="row">
+    <div class="lightbulb">
+      <a class="lights">Lights On!</a>
+    </div>
+    <div class="background first">
+      <h1>calvin j.</h1>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+
+$(function() {
+  $("a.lights").click(function(){
+    $(".background").addClass("brighten");
+    $("a.lights").addClass("none")
+  });
+});
+
+  // $(window).load(function(){
+  //   var theWindow = $(window);
+  //   $(function() {
+  //     $(".background").onload
+  //   })
+  // });
+
+//   $(document).ready(function() {
+//     console.log("ready!");
+//     $(".background button").click(){
+//       $(".background").animate({
+//         webkitFilter: "none",
+//       }), 1000;
+//     });
+//   });
+
+//   $(function() {
+//     $(".background").hover(function(){
+//         $("img").toggleClass("grey");
+//     });
+// });
+
+  // jQuery is available
+  // $(function() {
+  //   $(".sunset").hover(function(){
+  //     $(".background").animate({
+  //       marginLeft: "50px",
+  //     }),
+  //     $(".box.blue").animate({
+  //       marginLeft: "0px",
+  //       zIndex: "-1";
+  //     }), 1000;
+  //   }
+  //  });
+
+
+</script>
+<% include partials/footer %>
+
+
+
