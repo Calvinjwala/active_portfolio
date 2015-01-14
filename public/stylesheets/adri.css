@@ -39,13 +39,14 @@ html body {
 }
 
 .brighten {
- -webkit-filter: brightness(100%);
- -webkit-filter: hue-rotate(30deg);
+  -webkit-filter: grayscale(0.4);
+  -webkit-filter: brightness(100%);
+  -webkit-filter: hue-rotate(30deg);
 }
 
 .darken {
- -webkit-filter: brightness(55%);
- margin-top: 0px;
+  -webkit-filter: brightness(55%);
+  margin-top: 0px;
 }
 
 .none {
@@ -55,7 +56,11 @@ html body {
 .first {
   text-align: center;
   margin: 0auto;
-  vertical-align: middle
+  vertical-align: middle;
+  margin-top: 320px;
+  font-weight: 120%;
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 
@@ -72,4 +77,3 @@ html body {
   width: 100%;
   min-height: 100%
 }
-
