@@ -4,12 +4,16 @@ html body {
 }
 
 .lightbulb {
+  text-align: center;
+  margin: 0auto;
+  margin-top: 200px;
+  vertical-align: middle;
   z-index: 1;
 }
 
-a .lights {
+.lights {
   font-color: white !important;
-  text-align: center;
+  margin: 0auto;
 }
 
 .background {
@@ -17,7 +21,7 @@ a .lights {
   background-image: url(/images/backgrounds/lake.jpg);
   position: fixed;
   top: 0;
-  -webkit-filter: brightness(10%);
+  -webkit-filter: brightness(7%);
   -webkit-transition:-webkit-filter 0.8s ease-in-out;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -29,22 +33,21 @@ a .lights {
 }
 
 .brighten {
- -webkit-filter: brightness(105%);
+ -webkit-filter: brightness(125%);
 }
 
 .none {
   display: none;
 }
 
-
-
-
 .first {
-
+  text-align: center;
+  margin-top: 100px;
+  margin: 0auto;
+  vertical-align: middle
 }
 
 .background_two {
-  background-color: white;
   position: relative;
   top: 0;
   -webkit-background-size: cover;
