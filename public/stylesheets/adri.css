@@ -6,14 +6,20 @@ html body {
 .lightbulb {
   text-align: center;
   margin: 0auto;
-  margin-top: 200px;
+  margin-top: 380px;
   vertical-align: middle;
   z-index: 1;
+  } .lightbulb h1 {
+  color: white;
 }
 
 .lights {
   font-color: white !important;
   margin: 0auto;
+}
+
+#lightbulb{
+  -webkit-filter: brightness(110%);
 }
 
 .background {
@@ -33,7 +39,13 @@ html body {
 }
 
 .brighten {
- -webkit-filter: brightness(125%);
+ -webkit-filter: brightness(100%);
+ -webkit-filter: hue-rotate(30deg);
+}
+
+.darken {
+ -webkit-filter: brightness(55%);
+ margin-top: 0px;
 }
 
 .none {
@@ -42,10 +54,12 @@ html body {
 
 .first {
   text-align: center;
-  margin-top: 100px;
   margin: 0auto;
   vertical-align: middle
 }
+
+
+
 
 .background_two {
   position: relative;
@@ -57,13 +71,5 @@ html body {
   overflow: hidden;
   width: 100%;
   min-height: 100%
-}
-
-.bgwidth {
-  width: 100%;
-}
-
-.bgheight {
-  width: 100%;
 }
 

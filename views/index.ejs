@@ -1,16 +1,22 @@
 <% include partials/header %>
+<% include partials/navbar %>
+
 
 <div class="container-fluid ">
   <div class="row">
+
     <div class="lightbulb">
-      <img src="/images/icons/lightbulb.png" style="height:100px"><br>
-      <a class="lights">Lights On!</a>
+      <h1>Welcome to this website</h1>
+      <img src="/images/icons/lightbulb.png" id="lightbulb_image" style="height:100px"><br><br>
+      <a class="lights">Turn the lights on!</a>
     </div>
+
     <div class="background">
       <div class="first">
-        <h1>calvin j.</h1>
+        <h3>calvin j.</h3>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -21,7 +27,9 @@
 $(function() {
   $("a.lights").click(function(){
     $(".background").addClass("brighten");
-    $("a.lights").addClass("none")
+    $("a.lights").addClass("none");
+    $(".lightbulb h1").addClass("none");
+    $("#lightbulb_image").addClass("none");
   });
 });
 
