@@ -1,0 +1,75 @@
+body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(/images/backgrounds/me.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.row {
+  font-family: 'Roboto', sans-serif;
+}
+
+#nav {
+  padding-left: 5px;
+}
+
+.header {
+  text-align: right;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.current {
+  color:white;
+  margin-top: 25px;
+  height: 100%;
+  width: 100%;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.home {
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.btn {
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-top: 5px;
+}
+
+.content {
+  margin-top: 30px;
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.prj {
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.image {
+  width: 220px;
+}
+
+.icon {
+  display: inline-block;
+  /*position: relative;*/
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+
