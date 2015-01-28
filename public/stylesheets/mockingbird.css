@@ -8,19 +8,27 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.row {
   font-family: 'Roboto', sans-serif;
 }
 
-#nav {
-  padding-left: 5px;
+a {
+  color: #ffaa00;
+}
+
+a:hover {
+  color: #ffaa00;
+}
+
+.nav {
+  padding-left: 20px;
 }
 
 .header {
   text-align: right;
   color: white;
+  -webkit-text-shadow: 1px 1px 1px black;
+  -moz-text-shadow: 1px 1px 1px black;
+  -o-text-shadow: 1px 1px 1px black;
   text-shadow: 1px 1px 1px black;
 }
 
@@ -39,6 +47,7 @@ body {
   display: inline-block;
   margin-right: 2px;
   margin-left: 2px;
+  padding-left: 10px;
 }
 
 .btn {
