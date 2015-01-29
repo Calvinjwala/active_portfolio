@@ -37,8 +37,8 @@ a:hover {
   margin-top: 25px;
   height: 100%;
   width: 100%;
-  padding-right: 3px;
-  padding-left: 3px;
+  padding-right: 9px;
+  padding-left: 11px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -72,6 +72,11 @@ a:hover {
   width: 220px;
 }
 
+img:hover {
+  background: none;
+  background-color: red;
+}
+
 .icon {
   display: inline-block;
   /*position: relative;*/
@@ -81,4 +86,6 @@ a:hover {
   margin: 0px 0px 10px 0px;
 }
 
-
+#heading {
+  font-size: 15px;
+}
