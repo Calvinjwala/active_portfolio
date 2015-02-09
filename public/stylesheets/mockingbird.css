@@ -70,11 +70,13 @@ a:hover {
 
 .image {
   width: 220px;
+  height: 110px;
+  padding: 5px;
 }
 
 img:hover {
   background: none;
-  background-color: red;
+  background-color: #561DE2;
 }
 
 .icon {
