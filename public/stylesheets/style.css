@@ -1,0 +1,11 @@
+/*--- HEADING Mixins ---*/
+/*--- Miscellaneous Mixins & Classes ----*/
+/*
+// Here's an example of how to use one of these mixins:
+// .box { @include border-radius(10); }
+// 10 is the variable that replaces the placeholder value*/
+.header {
+  text-align: right;
+  color: #222; }
+
+/*# sourceMappingURL=style.css.map */
