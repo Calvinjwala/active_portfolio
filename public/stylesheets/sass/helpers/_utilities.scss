@@ -1,0 +1,119 @@
+// UTILITY CLASSES
+.clearfix {
+    &:after {
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.vertical-align-middle {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    @include transform(translate(0, -50%));
+}
+
+.text-align-left {
+    text-align: left;
+}
+.text-align-right {
+    text-align: right;
+}
+.text-align-center {
+    text-align: center;
+}
+.pull-xs-right {
+    float: right !important;
+}
+.pull-xs-left {
+    float: left !important;
+}
+.margin-zero {
+    margin: 0;
+}
+.m-1-b {
+    margin-bottom: 1em;
+}
+.m-1-t {
+    margin-top: 1em;
+}
+.m-2-b {
+    margin-bottom: 2em;
+}
+.m-2-t {
+    margin-top: 2em;
+}
+.m-3-b {
+    margin-bottom: 3em;
+}
+.m-3-t {
+    margin-top: 3em;
+}
+.m-y-1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.m-y-2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.m-y-1-2 {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.m-y-2-1 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.m-y-1-3 {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.m-y-3-1 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.max-width-100 {
+    max-width: 100%;
+}
+.width-100 {
+    width: 100%;
+}
+.p-1 {
+    padding: 1em;
+}
+.p-half {
+    padding: 0.5em;
+}
+.p-quarter {
+    padding: 0.25em;
+}
+.padding-zero {
+    padding: 0;
+}
+.inline-block {
+    display: inline-block;
+}
+.display-inline {
+    display: inline-block;
+}
+.white {
+    color: $color-white;
+} 
+.black {
+    color: $color-black;
+}
+.bg-white {
+    background: $color-white;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: bold;
+}
