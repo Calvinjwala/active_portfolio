@@ -1,80 +1,95 @@
+html {
+    max-width: 100%;
+    height: 100vh;
+    border: 30px solid #F6B2B2;
+    border-bottom: none;
+}
+
 html, body {
-    // width: 100%;
-    // margin: 0;
-    // padding: 0;
-    // text-rendering: optimizeLegibility;
-    // -webkit-text-size-adjust: 100%;
-    // -moz-osx-font-smoothing: grayscale;
-    // -webkit-font-smoothing: antialiased;
-    // -webkit-appearance:none !important;
-    @include font-size(16px);
-    color: $secondary-grey;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    color: $secondary-grey;    
+.big-poppa {
+    display: flex;
+    width: 100%;
 }
 
-b, strong {
-//     font-weight: 500;
+.hero-banner {
+    width: 100%;
+    height: 100vh;
+    background: #1E242F;
 }
 
-a {
-    cursor: pointer;
+$columns: 16;
+
+@media (min-width: $mq-large) {
+    @for $i from 1 through $columns {
+        .notorious-big-#{$i} {
+            width: ((100 / $columns) * $i) * 1%;
+            padding: 2px 8px;
+        }
+    }
+}
+    
+@media (min-width: $mq-medium) {
+    @for $i from 1 through $columns {
+        .notorious-md-#{$i} {
+            width: ((100 / $columns) * $i) * 1%;
+            padding: 2px 6px;
+        }
+    }
+}
+    
+@media (min-width: $mq-ipad) {
+    @for $i from 1 through $columns {
+        .notorious-sm-#{$i} {
+            width: ((100 / $columns) * $i) * 1%;
+            padding: 2px 4px;
+        }
+    }
+}
+    
+@media (min-width: $mq-small) {
+    @for $i from 1 through $columns {
+        .notorious-xs-#{$i} {
+            width: ((100 / $columns) * $i) * 1%;
+            padding: 2px;
+        }
+    }
 }
 
-.main-content-wrapper h1,
-.main-content-wrapper h2,
-.main-content-wrapper h3,
-.main-content-wrapper h4,
-.main-content-wrapper h5,
-.main-content-wrapper h6,
-.main-content-wrapper .h1,
-.main-content-wrapper .h2,
-.main-content-wrapper .h3,
-.main-content-wrapper .h4,
-.main-content-wrapper .h5,
-.main-content-wrapper .h6,
-.main-content-wrapper .panel-title,
-.main-content-wrapper th{
-    color: $primary-grey;
+
+// CHART ANIMATION
+$colors-list: #111 #222 #333 #444 #555 #666 #777 #888 #999 #AAA #BBB #CCC #DDD;
+
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .lines-#{$i} {
+        margin-bottom: #{$i*2.5}px;
+        animation-delay: #{$i/10}s;
+        content: "";
+        height: calc( ( (100vh - 30px) / 10) - #{$i*2.5}px );
+        background: $current-color;
+    }
 }
 
-.main-content-wrapper h1,
-.main-content-wrapper h2,
-.main-content-wrapper h3,
-.main-content-wrapper h5,
-.main-content-wrapper .h1,
-.main-content-wrapper .h2,
-.main-content-wrapper .h3,
-.main-content-wrapper .h5{
-    font-weight: 300;
-    /*margin-bottom: 45px;*/
+@for $i from 1 through 10 {
+    .lines-#{$i} {
+        margin-bottom: #{$i*2.5}px;
+        animation-delay: #{$i/10}s;
+        content: "";
+        height: calc( ( (100vh - 30px) / 10) - #{$i*2.5}px );
+        background-color: #F6B2B2;
+        // opacity: #{$i};
+    }
 }
 
-.main-content-wrapper h4,
-.main-content-wrapper .h4,
-.main-content-wrapper h5,
-.main-content-wrapper .h5{
-    font-weight: bold;
-}
-
-.main-content-wrapper h4,
-.main-content-wrapper .h4{
-    @include font-size(17px);
-}
-
-.main-content-wrapper h5,
-.main-content-wrapper .h5{
-    @include font-size(13px);
-}
-
-.main-content-wrapper, .main-content-wrapper .btn, .main-content-wrapper .form-control, .main-content-wrapper  .alert{
-    @include font-size(13px);
-    overflow: hidden;
-}
-
-.form-control{
-    border: 1px solid $grey-input;
+#woot {
+    background: url(http://i.imgur.com/k3d4fCB.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: border-box;
 }
 
